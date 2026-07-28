@@ -1,0 +1,136 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+    max-width:1400px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 35px;
+
+    background:rgba(20,20,20,.55);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    z-index:999;
+
+    transition:.35s;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    box-shadow:0 0 18px rgba(255,208,120,.45);
+
+}
+
+.logo span{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#FFD87A;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#FFD87A;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* Sticky Effect */
+
+.navbar.scrolled{
+
+    background:rgba(10,10,10,.82);
+
+    top:10px;
+
+}

@@ -1,0 +1,168 @@
+/* ===============================
+   HERO SECTION
+================================ */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.75)
+    );
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+    width:90%;
+
+    max-width:900px;
+
+}
+
+.hero-logo{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,216,122,.8);
+
+    box-shadow:
+    0 0 25px rgba(255,216,122,.6),
+    0 0 80px rgba(255,216,122,.25);
+
+    animation:floatLogo 4s ease-in-out infinite;
+}
+
+.hero h1{
+
+    font-size:90px;
+
+    color:white;
+
+    margin-top:30px;
+
+    letter-spacing:2px;
+
+    text-shadow:
+    0 0 25px rgba(255,216,122,.8);
+
+}
+
+.hero p{
+
+    margin:25px auto;
+
+    max-width:700px;
+
+    font-size:22px;
+
+    color:#e6e6e6;
+
+}
+
+.buttons{
+
+    margin-top:45px;
+
+}
+
+.btn{
+
+    margin:10px;
+
+}
+
+.scroll-down{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:30px;
+
+    color:white;
+
+    animation:bounce 2s infinite;
+
+}
+
+/* Animations */
+
+@keyframes floatLogo{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+@keyframes bounce{
+
+    0%,20%,50%,80%,100%{
+
+        transform:translate(-50%,0);
+
+    }
+
+    40%{
+
+        transform:translate(-50%,-12px);
+
+    }
+
+    60%{
+
+        transform:translate(-50%,-6px);
+
+    }
+
+}

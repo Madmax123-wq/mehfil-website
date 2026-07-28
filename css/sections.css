@@ -1,0 +1,301 @@
+/* ==================================
+   ABOUT
+================================== */
+
+#about{
+
+    padding:120px 0;
+
+}
+
+#about .container{
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+#about p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    color:#d8d8d8;
+
+    line-height:1.9;
+
+}
+
+/* ==================================
+   FEATURES
+================================== */
+
+#features{
+
+    padding:120px 0;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.feature-card{
+
+    background:rgba(38,28,18,.78);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,216,122,.15);
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 15px 40px rgba(255,216,122,.18);
+
+}
+
+.feature-card i{
+
+    font-size:55px;
+
+    color:#FFD87A;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    color:white;
+
+    margin-bottom:15px;
+
+    font-size:26px;
+
+}
+
+.feature-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+}
+
+/* ==================================
+   STAFF IMPROVEMENTS
+================================== */
+
+.founder-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#B87435;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.founder-btn:hover{
+
+background:#D18A43;
+
+transform:translateY(-3px);
+
+}
+
+.staff-grid{
+
+justify-content:center;
+
+display:flex;
+
+}
+
+.staff-card{
+
+    width:380px;
+
+    background:rgba(38,28,18,.78);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,216,122,.18);
+
+    border-radius:25px;
+
+    text-align:center;
+
+    padding:35px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+}
+
+.staff-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(255,216,122,.20);
+
+}
+
+.staff-card img{
+
+    width:150px;
+
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #FFD87A;
+
+    margin-bottom:20px;
+
+    box-shadow:0 0 25px rgba(255,216,122,.45);
+
+}
+
+.staff-card h3{
+
+    font-size:32px;
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.staff-card span{
+
+    display:inline-block;
+
+    background:#B87435;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+.staff-card p{
+
+    color:#d7d7d7;
+
+    line-height:1.8;
+
+}
+
+.members-list{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+
+gap:18px;
+
+margin-top:25px;
+
+}
+
+.member{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:14px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,216,122,.12);
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.member:hover{
+
+transform:translateY(-4px);
+
+background:rgba(255,216,122,.08);
+
+}
+
+.member img{
+
+width:52px;
+
+height:52px;
+
+border-radius:50%;
+
+}
+
+.member-name{
+
+font-weight:600;
+
+color:#fff;
+
+}
+
+.member-status{
+
+font-size:14px;
+
+color:#8df58d;
+
+}
